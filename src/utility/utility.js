@@ -48,20 +48,20 @@ function generateRandomColor(){
 //     return vehicleDetails
 // }
 
-function filterData(value){
-    generateParkingDetails(50).filter(filter => filter.color==value);
-}
+// function filterData(value){
+//     generateParkingDetails(50).filter(filter => filter.color==value);
+// }
 
-function generateUniqueSlot(totelSlot,generatedSlot){
-    let generateSlot = [];
-    while(generateSlot.length < generatedSlot){
-     let randomnum = Math.floor(Math.random() * totelSlot) + 1;   
-        if(generateSlot.indexOf(randomnum) === -1){
-            generateSlot.push(randomnum)
-        }
-    }
-    return generateSlot;
-}
+// function generateUniqueSlot(totelSlot,generatedSlot){
+//     let generateSlot = [];
+//     while(generateSlot.length < generatedSlot){
+//      let randomnum = Math.floor(Math.random() * totelSlot) + 1;   
+//         if(generateSlot.indexOf(randomnum) === -1){
+//             generateSlot.push(randomnum)
+//         }
+//     }
+//     return generateSlot;
+// }
 
 
 export function availableSlot(totalSlot, usedSlot){
